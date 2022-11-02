@@ -160,26 +160,137 @@
     margin-bottom: 57.47px;
     margin-top: 0;
 }
-.intro-action {
+.action-link {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 227px;
     max-height: 55px;
     box-sizing: border-box;
-    padding: 14.39px 63.65px 16.61px 63px;
-    color: #ffff;
     font-family:'Open Sans';
     font-size: 18px;
     line-height: 34px;
     border-radius: 5px;
     font-weight: 700;
+}
+.action-link_orange{
     background-color: #ff2d2d;
+    color: #ffff;
+    padding: 14.39px 63.65px 16.61px 63px;
     text-decoration: none;
+}
+.action-link_white {
+    background-color: #ffff ;
+    color: #ff2d2d;
+    padding: 0;
+    text-decoration: none;
+    border: 2px solid #ff2d2d;
+    padding: 15.39px 59.65px 15.61px 60px;
 }
 .intro-video {
     width: 551px;
     height: 356px;
     object-fit: cover;
     box-shadow: -2.2px -13.8px 73px rgba(0, 0, 0, 0.29);
+}
+/*Services*/
+.services {
+    display: flex;
+    width: 1249px;
+    margin: 0 auto;
+    padding: 107.47px 0 90px;
+    border-bottom: 2px solid #ececec;
+    justify-content: space-between;
+}
+.services__info {
+    width: 539px;
+}
+.services__heading {
+    font-family: 'Open Sans';
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 55px;
+    letter-spacing: 0.422159px;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 55px;
+    width: 523px;
+    height: 87px;
+    margin-top: -8px;
+}
+.services__about {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0;
+    margin-bottom: 58px;
+    width: 539px;
+}
+.services__items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 610px;
+    gap: 19px;
+}
+.services__item {
+    width: 285px;
+    margin-bottom: 24px;
+}
+.services__item_icon_management::before {
+    content:'';
+    display: block;
+    width: 41px;
+    height: 41px;
+    background-image: url(../img/Combined1.svg);
+    background-repeat: no-repeat;
+    margin-bottom: 31px;
+}
+.services__item_icon_design::before {
+    content:'';
+    display: block;
+    width: 37.68px;
+    height: 40px;
+    background-image: url(../img/Combined4.svg);
+    background-repeat: no-repeat;
+    margin-bottom: 31px;
+}
+.services__item_icon_logo::before {
+    content:'';
+    display: block;
+    width: 44px;
+    height: 36px;
+    background-image: url(../img/Combined3.svg);
+    background-repeat: no-repeat;
+    margin-bottom: 31px;
+}
+.services__item_icon_anime::before {
+    content:'';
+    display: block;
+    width: 41.56px;
+    height: 36px;
+    background-image: url(../img/Combined2.svg);
+    background-repeat: no-repeat;
+    margin-bottom: 31px;
+}
+.services__title {
+    margin: 0;
+    margin-bottom: 4px;
+    font-family: 'Open Sans';
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.services__text {
+    font-family: 'Open Sans';
+    font-size: 16px;
+    line-height: 28px;
+    width: 301px;
+    height: 101px;
+    margin-top: 0;
+}
+.services__text_design {
+    width: 287.05px;
 }
