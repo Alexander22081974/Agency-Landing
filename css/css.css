@@ -68,7 +68,9 @@
     font-size: 16px;
 }
 /*Header*/
-.header-wrapper {
+.page__inner {
+    display: block;
+    width: 100%;
     padding-top: 29px;
     background-color: #f6f2f2;
 }
@@ -125,20 +127,24 @@
 }
 /*Main*/
 /*Intro*/
-.intro-wrapper {
+/*.intro-wrapper {
     display: block;
     width: 100%;
     padding: 102px 0 110px;
     background-color: #f6f2f2;
-}
+}*/
 .intro {
     display: flex;
     width: 1249px;
     margin: 0 auto;
-    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
+    padding: 102px 0 110px;
+    background-color: #f6f2f2;
 }
 .intro-info {
     max-width: 595px;
+    margin-right: 103px;
 }
 .intro-heading {
     font-family:'Open Sans';
@@ -390,6 +396,7 @@
 .team {
     width: 1249px;
     margin: 0 auto;
+    margin-bottom: 55px;
     padding: 65px 0 53px;
 }
 .line__left {
@@ -442,7 +449,7 @@
     margin-bottom: 59px;
     list-style: none;
 }
-.team__lead-link{
+.team__lead-link {
     font-family: 'Open Sans';
     font-size: 18px;
     font-style: italic;
@@ -450,6 +457,9 @@
     letter-spacing: 0.9px;
     color: #000000;
     text-decoration: none;
+}
+.team__lead-link:hover {
+    text-decoration: underline;
 }
 .team__lead-foto {
     background-color: #FF3F40;
@@ -520,4 +530,67 @@
 }
 .team__other:hover > .team__other-name {
     display: block;
+}
+.feature__products > img:hover {
+    transform: scale(1.1);
+}
+
+/*Subscribe*/
+.page__inner_dark {
+    background-color:#2C2C2C;
+}
+.subscribe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 1249px;
+    margin: 0 auto;
+    padding: 150px 0 140px;
+}
+.subscribe__heading {
+    font-family: 'Open Sans';
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 1.05px;
+    color: #FFFFFF;
+    margin:-19px 26px 26px 75px;
+}        
+.subscribe__about {
+    font-family: 'Open Sans';
+    font-size: 15.9953px;
+    line-height: 28px;
+    color: #FFFFFF;
+    margin: 0 0 58px 48px;
+}
+.subscribe__form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+.subscribe__input {
+    width: 485px;
+    height: 79px;
+    border-radius: 5px;
+    padding: 0 36px;
+    padding-right: 0;
+    background-color: #FFFFFF;
+    border: none;
+    margin: 0 0 0 52px;
+}
+.subscribe__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 214px;
+    height: 79px;
+    background-color: #ff2d2d;
+    border: none;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-family: 'Open Sans';
+    font-size: 17.9026px;
+    font-weight: 700;
+    line-height: 34px;
+    border-radius: 5px;
 }
