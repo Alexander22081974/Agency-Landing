@@ -7,8 +7,7 @@
     url('../fonts/open-sans-v34-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
     url('../fonts/open-sans-v34-latin-regular.woff') format('woff'), /* Modern Browsers */
-    url('../fonts/open-sans-v34-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/open-sans-v34-latin-regular.svg#OpenSans') format('svg'); /* Legacy iOS */
+   
 }
 @font-face {
     font-family: 'Open Sans';
@@ -19,8 +18,7 @@
     url('../fonts/open-sans-v34-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/open-sans-v34-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
     url('../fonts/open-sans-v34-latin-600.woff') format('woff'), /* Modern Browsers */
-    url('../fonts/open-sans-v34-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/open-sans-v34-latin-600.svg#OpenSans') format('svg'); /* Legacy iOS */
+    
 }
 @font-face {
     font-family: 'Open Sans';
@@ -31,8 +29,7 @@
     url('../fonts/open-sans-v34-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
     url('../fonts/open-sans-v34-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
     url('../fonts/open-sans-v34-latin-700.woff') format('woff'), /* Modern Browsers */
-    url('../fonts/open-sans-v34-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
-    url('../fonts/open-sans-v34-latin-700.svg#OpenSans') format('svg'); /* Legacy iOS */
+ 
 }
 @font-face {
     font-family: 'Open Sans';
@@ -70,6 +67,9 @@ button {
     font-weight: 400;
     font-size: 16px;
 }
+body {
+    margin: 0;
+}
 /*Header*/
 .page__inner {
     display: block;
@@ -80,27 +80,39 @@ button {
 .header {
     display: flex;
     justify-content: center;
-    width: 1249px;
+    max-width: 1249px;
     min-height: 89px;
     margin: 0 auto;
     background-color: rgba(0,0,0,0.8);
 }
 .site-menu {
-    margin-left: -53px;
+    margin-left: -58px;
+}
+@media (max-width: 880px) {
+    .site-menu {
+        justify-content: center;
+        margin-left: revert;
+    }
 }
 .menu-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 479px;
+    max-width: 479px;
     margin: 0;
     padding: 0;
     list-style: none;
 }
 .menu-list > li {
     display: flex;
+    flex-wrap: wrap;
     min-height: 89px;
-
+}
+@media (max-width: 880px) {
+    .menu-list {
+        justify-content: center;
+    }
+    
 }
 .menu-link {
     display: flex;
@@ -138,30 +150,55 @@ button {
 }*/
 .intro {
     display: flex;
-    width: 1249px;
+    flex-wrap: wrap;
+    /*max-width: 1249px;*/
     margin: 0 auto;
+    margin-left: 1px;
     justify-content: center;
     width: 100%;
-    padding: 102px 0 110px;
+    padding: 75px 0 110px;
     background-color: #f6f2f2;
+}
+@media screen and (min-width: 880px) and (max-width: 1266px) {
+    .intro {
+        flex-wrap: nowrap;
+    }
 }
 .intro-info {
     max-width: 595px;
     margin-right: 103px;
 }
+@media (max-width: 1266px) {
+    .intro-info {
+        width: 50%;
+        padding-left: 1vh;
+        margin-right: 15px;
+    }
+}
+@media (max-width: 880px) {
+    .intro-info {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 15px;
+        text-align: center;
+    }
+}
 .intro-heading {
     font-family:'Open Sans';
     font-size: 60px;
-    line-height: 72px;
+    line-height: 1.2;
     font-weight: 800;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     margin: 0;
-    margin-bottom: 20.52px;
-    margin-right: 82px;
+    margin-bottom: 17.52px;
+    margin-right: 34px;
     margin-top: -15px;
 }
 .intro-special {
+    word-break: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
     letter-spacing: 6px;
 }
 .intro-text {
@@ -191,6 +228,11 @@ button {
     padding: 14.39px 63.65px 16.61px 63px;
     text-decoration: none;
 }
+@media (max-width: 880px) {
+    .action-link_orange {
+        margin: auto;
+    }
+}
 .action-link_white {
     background-color: #ffff ;
     color: #ff2d2d;
@@ -205,10 +247,21 @@ button {
     object-fit: cover;
     box-shadow: -2.2px -13.8px 73px rgba(0, 0, 0, 0.29);
 }
+@media (max-width: 1266px) {
+    .intro-video {
+        width: 50%;
+    }
+}
+@media (max-width: 880px) {
+    .intro-video {
+        width: 100%;
+       
+    }
+}
 /*Services*/
 .services {
     display: flex;
-    width: 1249px;
+    max-width: 1249px;
     margin: 0 auto;
     padding: 107.47px 0 90px;
     border-bottom: 2px solid #ececec;
@@ -309,7 +362,7 @@ button {
 
 /*Feature*/
 .feature {
-    width: 1249px;
+    max-width: 1249px;
     margin: 0 auto;
     padding: 105px 0 65px;
 }
@@ -397,7 +450,7 @@ button {
 }
 /*Team*/
 .team {
-    width: 1249px;
+    max-width: 1249px;
     margin: 0 auto;
     margin-bottom: 55px;
     padding: 65px 0 53px;
@@ -547,7 +600,7 @@ button {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 1249px;
+    max-width: 1249px;
     margin: 0 auto;
     padding: 150px 0 140px;
 }
@@ -599,16 +652,17 @@ button {
 }
 /*Feedback*/
 .feedback {
-    width: 1249px;
+    max-width: 1249px;
     margin: 0 auto;
     padding-bottom: 107px;
 }
 .feedback-header {
+    max-width: 752px;
     margin-bottom: 67px;
 }
 .feedback__heading {
     margin: 0;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
     font-family: 'Open Sans';
     font-size: 41.9876px;
     line-height: 1.2;
@@ -620,10 +674,10 @@ button {
 .feedback__about {
     font-family: 'Open Sans';
     font-size: 15.9953px;
-    line-height: 28px;
-    width: 450px;
+    line-height: 1.75;
+    width: 752.85px;
     margin: 0;
-    margin-bottom: 31px; 
+    margin-bottom: 53px; 
 }
 .feedback__form >input::placeholder {
     font-family: 'Open Sans';
@@ -639,10 +693,12 @@ button {
 }
 .feedback__body {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .feedback__form {
-    width: 733px;
+    width: 731px;
+    margin-top: 10px;
 }
 .feedback__name {
     box-sizing: border-box;
@@ -655,7 +711,7 @@ button {
     border: none;
     background-color: rgba(0, 0, 0, 0.1);
     padding-left: 54px;
-    margin: 0 50px 44px 0;
+    margin: 0 48px 44px 0;
 }
 .feedback__email {
     box-sizing: border-box;
@@ -677,7 +733,7 @@ button {
     color: #000000;
     resize: none;
     width: 731px;
-    height: 239px;
+    height: 249px;
     padding: 31px 51px;
     border-radius: 5px;
     border: none;
@@ -703,7 +759,8 @@ button {
 }
 .contacts {
     width: 315px;
-    padding: 141px 17px 141px 81px;
+    padding: 134px 17px 141px 79px;
+    margin-top: 9px;
 }
 .contacts__heading {
     font-family: 'Open Sans';
@@ -713,20 +770,21 @@ button {
     letter-spacing: 0.317046px;
     text-transform: uppercase;
     color: #FFFFFF;
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
 }
 .contacts__address {
     font-family: 'Open Sans';
     font-size: 16px;
-    line-height: 28px;
+    line-height: 1.75;
+    font-style: normal;
     color: #FFFFFF;
-    margin: 0 0 27px 0;
+    margin: 0 0 21px 0;
 }
 .contacts__email {
     display: block;
     font-family: 'Open Sans';
     font-size: 16px;
-    line-height: 28px;
+    line-height: 1.75;
     color: #FFFFFF;
     text-decoration: none;
     margin: 0 0 20px 0;
@@ -734,7 +792,27 @@ button {
 .contacts__tel {
     font-family: 'Open Sans';
     font-size: 16px;
-    line-height: 28px;
+    line-height: 1.75;
     color: #FFFFFF;
     text-decoration: none;
+}
+/*Footer*/
+.page__inner_footer {
+   
+    background-color: #313030;
+}
+.footer {
+    max-width: 1249px;
+    min-height: 111px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.footer__copyright {
+    color:#B8B8B8;
+}
+.social {
+    display: flex;
+    gap: 18px;
 }
