@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
-    <title>Agnecy Landing</title>
+    <title>Agency Landing</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/css.css">
 </head>
@@ -143,18 +143,21 @@
                 <h2 class="subscribe__heading">Design tips, tricks, and freebies. Delivered weekly.</h2>
                 <p class="subscribe__about">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod.</p>
                 <form class="subscribe__form" action="" method="get">
-                    <input class="subscribe__input" type="email" name="email" id="email" placeholder="Email Address...">
+                    <input class="subscribe__input" type="email" name="email" id="emailadress" placeholder="Email Address...">
                     <button class="subscribe__button" type="submit">Subscribe</button>
                 </form>
             </section>
         </div>   
         <section class="feedback">
             <div class="feedback-header">
-                <h2 class="feedback__heading" id="touch">Get in touch</h2>
-                <p class="feedback__about">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
-                <hr class="line line__left">
+                <div class="feedback__inner">
+                    <h2 class="feedback__heading" id="touch">Get in touch</h2>
+                    <p class="feedback__about">Lorem ipsum dolor sit amet, consectetur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et. ur adipis cing elit, sed do eiusmod tempor incididunt ut labore et.</p>
+                    <hr class="line line__left">
+                </div>
             </div>
             <div class="feedback__body">
+                <div class="feedback__box feedback__left"></div>
                 <form class="feedback__form" method="get">
                     <input class="feedback__name" type="text" placeholder="Name" name="Name">
                     <input class="feedback__email" type="email" placeholder="Your Email" name="email" id="email">
@@ -167,26 +170,27 @@
                     <a class="contacts__email" href="mailto:redwan@deviserweb.com">redwan@deviserweb.com</a>
                     <a class="contacts__tel" href="tel:(+88)01761746373">(+88) 017 617 46373</a>
                 </section>
+                <div class="feedback__box feedback__right"></div>
             </div>
         </section> 
     </main>
     <div class="page__inner page__inner_footer">
         <footer class="footer">
             <p class="footer__copyright">&copy; Copyright @Junaed 2016, All rights reserved.</p>
-            <section class="footer__social social">
-                <a class="social__link" href="">
+            <ul class="footer__social social">
+                <li class="social__link" href="">
                     <img class="social__logo" src="./img/Twitter.svg" alt="Иконка Twitter">
-                </a>
-                <a class="social__link" href="">
+                </li>
+                <li class="social__link" href="">
                     <img class="social__logo" src="./img/LinkedIn.svg" alt="Иконка LinkedIn">
-                </a>
-                <a class="social__link" href="">
+                </li>
+                <li class="social__link" href="">
                     <img class="social__logo" src="./img/Google.svg" alt="Иконка Google">
-                </a>
-                <a class="social__link" href="">
+                </li>
+                <li class="social__link" href="">
                     <img class="social__logo" src="./img/Facebook.svg" alt="Иконка Facebook">
-                </a>
-            </section>
+                </li>
+            </ul>
         </footer>
     </div>
 </body>
