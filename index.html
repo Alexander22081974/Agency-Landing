@@ -30,6 +30,23 @@
                     </li>
                 </ul>
             </nav>
+            <nav class="popup-menu">
+                <button class="popup-menu__button"></button>
+                <ul class="popup-menu__list hide">
+                    <li class="popup-menu__item" >
+                        <a class="popup-menu__link popup-menu__active" href="">Home</a>
+                    </li>
+                    <li class="popup-menu__item">
+                        <a class="popup-menu__link" href="#feature">Portfolio</a>
+                    </li>
+                    <li class="popup-menu__item">
+                        <a class="popup-menu__link" href="#team">About us</a>
+                    </li>
+                    <li class="popup-menu__item" >
+                        <a class="popup-menu__link" href="#touch">Contact</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
     </div>
     <main>
@@ -58,7 +75,7 @@
                     <p class="services__text">Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor</p>
                 </div>
                 <div class="services__item services__item_icon_design">
-                    <h3 class="services__title">UI /UX Design</h3>
+                    <h3 class="services__title services__title_design">UI /UX Design</h3>
                     <p class="services__text services__text_design">Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor</p>
                 </div>
                 <div class="services__item services__item_icon_logo">
@@ -66,8 +83,8 @@
                     <p class="services__text">Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioeew idolor sit amet,</p>
                 </div>
                 <div class="services__item services__item_icon_anime">
-                    <h3 class="services__title">Animation</h3>
-                    <p class="services__text">Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor sit amet,</p>
+                    <h3 class="services__title services__title__animation">Animation</h3>
+                    <p class="services__text services__text__animation">Lorem ipsum dolor sitea amet, zixf conseit adipi cing elit, seddi do eiusmod btdempor in didunt utlae ore etioe.Lorem ipsum new idolor sit amet,</p>
                 </div>
             </div>
         </section>
@@ -157,11 +174,10 @@
                 </div>
             </div>
             <div class="feedback__body">
-                <div class="feedback__box feedback__left"></div>
                 <form class="feedback__form" method="get">
                     <input class="feedback__name" type="text" placeholder="Name" name="Name">
-                    <input class="feedback__email" type="email" placeholder="Your Email" name="email" id="email">
-                    <textarea class="feedback__textarea" name="textarea" placeholder="Type your message" id="" cols="30" rows="10"></textarea>
+                    <input class="feedback__email" type="email" placeholder="Your Email" name="email" id="email" required>
+                    <textarea class="feedback__textarea" name="textarea" placeholder="Type your message" id="" cols="30" rows="10" minlength="5" maxlength="100"></textarea>
                     <button class="feedback__button" type="submit">Send message</button>
                 </form>
                 <section class="feedback__contacts contacts"> 
@@ -170,7 +186,6 @@
                     <a class="contacts__email" href="mailto:redwan@deviserweb.com">redwan@deviserweb.com</a>
                     <a class="contacts__tel" href="tel:(+88)01761746373">(+88) 017 617 46373</a>
                 </section>
-                <div class="feedback__box feedback__right"></div>
             </div>
         </section> 
     </main>
@@ -193,5 +208,6 @@
             </ul>
         </footer>
     </div>
+    <script src="./js/popup-menu.js"></script>
 </body>
 </html>
